@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="__PUBLIC__/statics/js/jquery-2.2.4.min.js"></script>
+</head>
+<style>
+    .yc{display: none;width:600px;height:800px;border:2px solid #ccc;}
+    .gb{float:right;margin:10px 20px auto;cursor:pointer;font-size:14px;color:#0B7DF2;}
+    ul li{width:700px;margin:10px auto;}
+    dd{width:150px;float:left}
+    .lxr{display: none;width:300px;height:300px;background:#6f8193;border:2px #00b3ca;}
+    .lxrgb{float:right;margin:10px 20px auto;cursor:pointer;font-size:14px;color:#fff;}
+    .ls{display: none;width:600px;height:500px;border:2px solid #ccc;}
+    .lsgb{float:right;margin:10px 20px auto;cursor:pointer;font-size:14px;color:#0B7DF2;}
+    /*.divk{width:800px;margin:0 auto;height:600px;border:1px solid #ccc;}*/
+</style>
+
+
+<body>
+    <div>
+        <if condition="($_SESSION['user']['identity'] eq 1) OR ($_SESSION['user']['identity'] eq 3)">
+
+            <else />
+            <div>
+                <button class="button">添加设备</button>
+            </div>
+        </if>
+
+        <div class="yc">
+            <p class="gb">关闭</p>
+            <div>
+
+                <form action="{:U('Equipment/dataadd')}" id="ufrm" method="post">
+                    <ul>
+                        <li><dd>设备编码：</dd><input type="text" name="device_sn" value=""></li>
+                        <li><dd>自定义信息：</dd><input type="text" name="custom" value=""></li>
+                        <li><dd>库：</dd><input type="text" name="warehouse_id" value=""></li>
+                        <li><dd>区：</dd><input type="text" name="layer_id" value=""></li>
+                        <li><dd>楼：</dd><input type="text" name="floor_id" value=""></li>
+                    </ul>
+                    <div class="lxr">
+                        <pl class="lxrgb">关闭</pl>
+                        <ul>
+                            <li>
+                                <foreach item="vo" name="user">
+                                    <dd><input type="checkbox" name="user_id[]" value="{$vo['id']}">{$vo['username']}</dd>
+                                </foreach>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="submit" value="确认添加">
+                    <input type="button" class="lxrtc" value="添加关联人">
+                </form>
+            </div>
+        </div>
+        <ul>
+            <foreach item="vo" name="data">
+                <li>设备编码：{$vo['device_sn']}</li>
+            </foreach>
+        </ul>
+    </div>
+    <div class="divk">
+        <div>
+            <button class="lssj">历史数据</button>
+        </div>
+        <div class="ls">
+
+            <input class="lsgb" type="button" value="关闭">
+        </div>
+    </div>
+</body>
+<script>
+    $(function(){
+        $('.lssj').click(function(){
+            $('.ls').fadeIn("slow");
+        })
+        $('.lsgb').click(function(){
+            $('.ls').fadeOut("slow");
+        })
+    })
+</script>
+    <script>
+        $(function(){
+            $('.button').click(function(){
+                $('.yc').fadeIn("slow");
+            })
+            $('.gb').click(function(){
+                $('.yc').fadeOut("slow");
+            })
+            $('.lxrtc').click(function(){
+                $('.lxr').fadeIn("slow");
+            })
+            $('.lxrgb').click(function(){
+                $('.lxr').fadeOut("slow");
+            })
+        })
+    </script>
+</html>

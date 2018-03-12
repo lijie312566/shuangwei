@@ -1,0 +1,21 @@
+18511694120
+
+
+
+有一个网页地址,比如PHP开发资源网主页: http://www.phpres.com/index.html,如何得到它的内容?
+答:
+方法1
+$readcontents = fopen("http://www.phpres.com/index.html", "rb"); 
+$contents = stream_get_contents($readcontents); 
+fclose($readcontents); echo $contents; 
+方法2: echo file_get_contents("http://www.phpres.com/index.html");
+
+写一个函数，尽可能高效的，从一个标准url里取出文件的扩展名例如: http://www.test.com.cn/abc/de/fg.php?id=1需要取出php或.php
+
+
+答： 
+1、$a="http://www.test.com.cn/abc/de/fg.php?id=1";
+
+2、$b=parse_url($a);
+
+3、Echosubstr($b['path'],strpos($b['path'],'.')); 

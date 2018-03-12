@@ -1,0 +1,147 @@
+<?php
+require_once __DIR__ . '/Autoloader.php';
+use Workerman\Worker;
+// 运行在主进程
+$tcp_worker = new Worker("tcp://0.0.0.0:2100");  
+
+$clients = []; //保存客户端信息
+    
+
+
+// 赋值过程运行在主进程
+$tcp_worker->onMessage = function($connection, $data)
+{
+	global $clients;
+	
+	$fdata=$data;
+	$format_data=str_replace('<','',$data);
+	$format_data=str_replace('>','',$format_data);
+	$cmd_obj=json_decode($format_data);
+	$biz_array=[];
+	
+	//var_dump($data);
+	if(is_object($cmd_obj)){
+		//file_put_contents('imei.ini', $cmd_obj->imei, FILE_APPEND); 
+		$imei = $cmd_obj->imei;
+		if(!array_key_exists($imei, $clients)){ //必须是之前没有注册过
+			//存储新登录用户的数据
+			$clients[$imei] = $connection;
+		}
+		switch ($cmd_obj->cmd){
+			case 'tick':
+				$biz_array=[
+					"imei"=> $cmd_obj->imei,
+					"cmd"=>$cmd_obj->cmd.'ack',
+					"result"=>true,
+					"index"=> $cmd_obj->index,
+					"params"=> [
+						"usoftupdate"=> false,
+						//MC20 是否需要软件升级
+						"dsoftupdate"=>false,
+						"uptime"=> 300,
+						"calib"=> false, 
+						"location"=>false,
+						"time"=>time(),
+					]
+				];
+				
+				break;
+			case 'location':
+				$biz_array=[
+					"imei"=> $cmd_obj->imei,
+					"cmd"=>$cmd_obj->cmd.'ack',
+					"result"=>true,
+					"index"=> $cmd_obj->index,
+					"params"=> [
+				
+					]
+				];
+				break;
+			case 'calibdata':
+				$biz_array=[
+				
+				"imei"=> $cmd_obj->imei,
+				"cmd"=>$cmd_obj->cmd.'ack',
+				"result"=>true,
+				"index"=> $cmd_obj->index,
+				"params"=>[
+					"count"=> 3, 
+					"datas"=> [
+					[
+						"d"=>123,
+						"a"=>0, 
+					],
+					[
+						"d"=>1123,
+						"a"=>500
+					],
+					[
+						"d"=>3123,
+						"a"=>1000
+					]
+						
+								]
+							]
+								
+				];
+				break;
+
+			case 'usoftupdate':
+				$biz_array=[
+				
+				"imei"=> $cmd_obj->imei,
+				"cmd"=>'usoftupdateack',
+				"result"=>true,
+				"index"=> $cmd_obj->index,
+				"params"=> [
+					"usoftver"=> 102, //更新目标代码的软件版本。
+					"url"=> 'http://www.yichiot.com/download/files/demo.bin'
+					
+				]];
+				break;
+
+
+			case 'dsoftupdate':
+				$biz_array=[
+				
+				"imei"=> $cmd_obj->imei,
+				"cmd"=>'dsoftupdateack',
+				"result"=>true,
+				"index"=> $cmd_obj->index,
+				"params"=> [
+				"usoftver"=> 102, //更新目标代码的软件版本。
+				"url"=> 'http://www.yichiot.com/download/files/demo.bin'
+						
+						]];
+				break;
+			
+			case 'configdevice':
+				$biz_array=[
+				"imei"=> $cmd_obj->imei,
+				"cmd"=>'configdeviceack',
+				"result"=>true,
+				"index"=> $cmd_obj->index,
+				"params"=> $cmd_obj->params,
+				];
+				break;
+		}
+
+	}
+
+	$biz_msg = '<'.json_encode($biz_array).'>';
+
+	$redis = new Redis();
+	$redis->connect('127.0.0.1', 6379);
+
+    
+      
+	$redis->lpush("devicesdata", $data);
+	$connection->send($biz_msg);
+
+};
+
+
+
+
+
+Worker::runAll();

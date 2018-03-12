@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<style>
+    li{margin:0 10px auto;}
+</style>
+<body>
+<div class="div">
+    <foreach item="vo" name="data">
+        <ul>
+            <li>{$vo['username']}</li>
+            <li>{$vo['phone']}</li>
+            <form action="{:U('Swuser/login')}" id="ufrm" method="post">
+                <input type="hidden" class="hidden" value="{$vo['username']}" name="username">
+                <input type="submit" class="button" value="登录">
+            </form>
+        </ul>
+    </foreach>
+</div>
+</body>
+</html>

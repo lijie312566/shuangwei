@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="__PUBLIC__/statics/js/jquery-2.2.4.min.js"></script>
+</head>
+<style>
+    .class{width:300px;border:1px solid #ccc;height:200px;display: none;}
+</style>
+<body>
+   <div>
+        <ul class="ul">
+            <foreach item="vo" name="auth_rule">
+                <li class="li">
+                    <if condition="$vo['line'][0] neq ''">
+                        {$vo['title']}
+                        <div class="class">
+                            <ul>
+                                <volist name="vo['line']" id="f">
+                                    <li><a href="__ROOT__/{$f['name']}">{$f['title']}</a></li>
+                                </volist>
+                            </ul>
+                        </div>
+                        <else />
+                        <a href="__ROOT__/{$vo['name']}">{$vo['title']}</a>
+                    </if>
+                </li>
+            </foreach>
+        </ul>
+        <include file="Public:left" />
+        <if condition="($_SESSION['user'][front_status] eq '2') AND ($_SESSION['user'][identity] eq '2') ">
+            <form action="{:U('Company/login')}" id="ufrm" method="post">
+                <input type="hidden" name="username" value="{$_SESSION['user'][front_username]}">
+                <input type="hidden" name="status" value="1">
+                <input type="submit" value="返回管理账户">
+            </form>
+        </if>
+        <if condition="$_SESSION['user'][user_status] eq '3'">
+            <form action="{:U('Swuser/login')}" id="ufrm" method="post">
+                <input type="hidden" name="username" value="{$_SESSION['user'][user_username]}">
+                <input type="hidden" name="status" value="1">
+                <input type="submit" value="返回客户账户">
+            </form>
+        </if>
+        <!--<if condition="$_SESSION['user'][front_username] neq ''">-->
+            <!--<form action="{:U('Company/login')}" id="ufrm" method="post">-->
+                <!--<input type="hidden" name="username" value="{$_SESSION['user'][front_username]}">-->
+                <!--<input type="hidden" name="status" value="1">-->
+                <!--<input type="submit" value="返回账户">-->
+            <!--</form>-->
+        <!--</if>-->
+    </div>
+    <div class="div">
+
+    </div> 
+    <script>
+       $(function(){
+           $('.li').click(function(){
+               $(this).find('.class').fadeIn("slow");
+
+           })
+       })
+    </script>
+</body>
+</html>

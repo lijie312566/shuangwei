@@ -1,0 +1,1893 @@
+[ 2018-03-05T09:26:19+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/index/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0023s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 24 行.
+NOTIC: [8] Undefined index:  /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 26 行.
+NOTIC: [8] Undefined index: dw /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 28 行.
+NOTIC: [8] Undefined index: range /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: the_first /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+NOTIC: [8] Undefined variable: the_end /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+SQL: SELECT * FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 0,5   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`username` FROM `sw_user`  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2018-03-05T09:26:41+08:00 ] 124.202.207.110 /index.php/Admin/Cycle/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0028s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0027s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sw_cycle` [ RunTime:0.0027s ]
+SQL: SELECT `device_sn`,`time`,`custom`,`temperature` FROM `sw_cycle` WHERE `device_sn` IN ('861358037968401') AND `time` BETWEEN 1519833600 AND 1519920000 ORDER BY time  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined variable: style /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 53 行.
+NOTIC: [8] Undefined variable: arrayshift /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 68 行.
+NOTIC: [8] Undefined variable: machine /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 69 行.
+NOTIC: [8] Undefined variable: data /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 73 行.
+NOTIC: [8] Undefined variable: key /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 73 行.
+NOTIC: [8] Undefined variable: machine /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 74 行.
+NOTIC: [8] Undefined variable: data /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 77 行.
+NOTIC: [8] Undefined variable: data /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 93 行.
+NOTIC: [8] Undefined variable: style /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 94 行.
+NOTIC: [8] Undefined variable: page /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 98 行.
+NOTIC: [8] Undefined variable: style /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 152 行.
+NOTIC: [8] Undefined variable: style /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 152 行.
+NOTIC: [8] Undefined variable: style /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 152 行.
+NOTIC: [8] Undefined variable: style /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 163 行.
+NOTIC: [8] Undefined variable: style /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 163 行.
+NOTIC: [8] Undefined variable: style /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 163 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2018-03-05T09:26:46+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0034s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0033s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0031s ]
+NOTIC: [8] Undefined variable: the_first /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+NOTIC: [8] Undefined variable: the_end /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+SQL: SELECT * FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 0,5   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`username` FROM `sw_user`  [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2018-03-05T09:27:05+08:00 ] 124.202.207.110 /index.php/Admin/Cycle/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0028s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0027s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sw_cycle` [ RunTime:0.0027s ]
+SQL: SELECT `device_sn`,`time`,`custom`,`temperature` FROM `sw_cycle` WHERE `device_sn` IN ('861358037968401') AND `time` BETWEEN 1519920000 AND 1520006400 ORDER BY time  [ RunTime:3.7091s ]
+NOTIC: [8] Undefined index: humidity /data/www/ph3.yichiot.com/Application/Admin/Controller/CycleController.class.php 第 100 行.
+NOTIC: [8] Undefined index: humidity /data/www/ph3.yichiot.com/Application/Admin/Controller/CycleController.class.php 第 100 行.
+NOTIC: [8] Undefined index: concentration /data/www/ph3.yichiot.com/Application/Admin/Controller/CycleController.class.php 第 118 行.
+NOTIC: [8] Undefined index: concentration /data/www/ph3.yichiot.com/Application/Admin/Controller/CycleController.class.php 第 118 行.
+NOTIC: [8] Undefined index: co /data/www/ph3.yichiot.com/Application/Admin/Controller/CycleController.class.php 第 135 行.
+NOTIC: [8] Undefined index: co /data/www/ph3.yichiot.com/Application/Admin/Controller/CycleController.class.php 第 135 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: machine /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 69 行.
+NOTIC: [8] Undefined offset: 861358037968401 /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 73 行.
+NOTIC: [8] Undefined variable: machine /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 74 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 81 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 81 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 81 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 81 行.
+NOTIC: [8] Array to string conversion /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 93 行.
+NOTIC: [8] Undefined variable: page /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/dbdde8af728fc9e622d10028dab793d0.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007736s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2018-03-05T09:27:24+08:00 ] 124.202.207.110 /index.php/Admin/Cycle/save?style=temperature
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0027s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0026s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0024s ]
+
+[ 2018-03-05T09:27:30+08:00 ] 124.202.207.110 /index.php/Admin/Cycle/execl?style=temperature
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0028s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0027s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0025s ]
+NOTIC: [8] Use of undefined constant 温度数据统计 - assumed '温度数据统计' /data/www/ph3.yichiot.com/Application/Admin/Controller/CycleController.class.php 第 212 行.
+NOTIC: [8] Use of undefined constant A - assumed 'A' /data/www/ph3.yichiot.com/Application/Common/Common/function.php 第 1289 行.
+
+[ 2018-03-05T09:27:34+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000250s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0039s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0038s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: the_first /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+NOTIC: [8] Undefined variable: the_end /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+SQL: SELECT * FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 0,5   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`username` FROM `sw_user`  [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2018-03-05T09:46:51+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0022s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0022s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 193 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 207 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2018-03-05T09:46:52+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map2?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0015s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0014s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `total_floor` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `device_sn`,`floor_id` FROM `sw_equipment` WHERE ( warehouse_id = 0 )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: buttom_limit /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 58 行.
+NOTIC: [8] Undefined index: upper_limit /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 58 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 87 行.
+NOTIC: [8] Undefined index: warehouse_limit /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 96 行.
+NOTIC: [8] Undefined index: floor_limit /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 97 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 177 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 191 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 207 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 304 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 304 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2018-03-05T09:46:54+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0032s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0031s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: the_first /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+NOTIC: [8] Undefined variable: the_end /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+SQL: SELECT * FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 0,5   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`username` FROM `sw_user`  [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2018-03-05T09:47:46+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0034s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0034s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0033s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 193 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 207 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2018-03-05T09:47:48+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map2?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0022s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `total_floor` FROM `sw_warehouse` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `device_sn`,`floor_id` FROM `sw_equipment` WHERE ( warehouse_id = 2 )  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 1 /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 228 行.
+NOTIC: [8] Undefined index: num /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 228 行.
+NOTIC: [8] Undefined index: num /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 228 行.
+NOTIC: [8] Undefined index: num /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 228 行.
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined index: num /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 37 行.
+NOTIC: [8] Undefined index: num /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 38 行.
+NOTIC: [8] Undefined index: num /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 37 行.
+NOTIC: [8] Undefined index: num /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 38 行.
+NOTIC: [8] Undefined index: buttom_limit /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 58 行.
+NOTIC: [8] Undefined index: upper_limit /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 58 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 87 行.
+NOTIC: [8] Undefined index: warehouse_limit /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 96 行.
+NOTIC: [8] Undefined index: floor_limit /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 97 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 177 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 191 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 207 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 304 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/3eb8ccc50b39ef364c50ff52e0ae11ab.php 第 304 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2018-03-05T09:47:51+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0027s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0089s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0026s ]
+NOTIC: [8] Undefined variable: the_first /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+NOTIC: [8] Undefined variable: the_end /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+SQL: SELECT * FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 0,5   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`username` FROM `sw_user`  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2018-03-05T11:21:41+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0034s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0033s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0031s ]
+NOTIC: [8] Undefined variable: the_first /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+NOTIC: [8] Undefined variable: the_end /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+SQL: SELECT * FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 0,5   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`username` FROM `sw_user`  [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2018-03-05T17:15:33+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0026s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0025s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0023s ]
+NOTIC: [8] Undefined variable: the_first /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+NOTIC: [8] Undefined variable: the_end /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+SQL: SELECT * FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 0,5   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`username` FROM `sw_user`  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2018-03-05T17:15:35+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0026s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0025s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `sw_equipment` LIMIT 1   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Undefined index: warehouse /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 95 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: warehouse /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 218 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2018-03-05T17:15:40+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0033s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0032s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: the_first /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+NOTIC: [8] Undefined variable: the_end /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+SQL: SELECT * FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 0,5   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`username` FROM `sw_user`  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2018-03-05T17:15:41+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0028s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0026s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0026s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 2 ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2018-03-05T17:15:51+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0022s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: floor_id /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 495 行.
+NOTIC: [2] finfo_file(): Empty filename or path /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0022s ]
+SQL: UPDATE `sw_equipment` SET `custom`='',`cycle_time`='60',`tem_upper_limit`='23',`tem_buttom_limit`='12',`warehouse_id`='0',`floor_id`='0' WHERE `device_sn` = '861358037968401' [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined index: con_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 525 行.
+NOTIC: [8] Undefined index: con_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 525 行.
+NOTIC: [8] Undefined index: humi_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 537 行.
+NOTIC: [8] Undefined index: humi_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 537 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000298s ]
+
+[ 2018-03-05T17:15:52+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000241s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0034s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0034s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0033s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000303s ]
+
+[ 2018-03-05T17:31:32+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0027s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0026s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0042s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0026s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2018-03-05T17:32:40+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0027s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: floor_id /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 493 行.
+NOTIC: [2] finfo_file(): Empty filename or path /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0022s ]
+SQL: UPDATE `sw_equipment` SET `custom`='',`cycle_time`='120',`tem_upper_limit`='22',`tem_buttom_limit`='11',`warehouse_id`='0',`floor_id`='0' WHERE `device_sn` = '861358037968401' [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: con_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: con_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: humi_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+NOTIC: [8] Undefined index: humi_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2018-03-05T17:33:40+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0035s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0034s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: floor_id /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 493 行.
+NOTIC: [2] finfo_file(): Empty filename or path /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0036s ]
+SQL: UPDATE `sw_equipment` SET `custom`='',`cycle_time`='1380',`tem_upper_limit`='223',`tem_buttom_limit`='111',`warehouse_id`='0',`floor_id`='0' WHERE `device_sn` = '861358037968401' [ RunTime:0.0041s ]
+NOTIC: [8] Undefined index: con_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: con_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: humi_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+NOTIC: [8] Undefined index: humi_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2018-03-05T17:34:40+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0021s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0019s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: floor_id /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 493 行.
+NOTIC: [2] finfo_file(): Empty filename or path /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0021s ]
+SQL: UPDATE `sw_equipment` SET `custom`='',`cycle_time`='1380',`tem_upper_limit`='223',`tem_buttom_limit`='111',`warehouse_id`='0',`floor_id`='0' WHERE `device_sn` = '861358037968401' [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: con_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: con_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: humi_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+NOTIC: [8] Undefined index: humi_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+
+[ 2018-03-05T17:35:57+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0037s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0035s ]
+NOTIC: [8] Undefined index: floor_id /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 493 行.
+NOTIC: [2] finfo_file(): Empty filename or path /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0038s ]
+SQL: UPDATE `sw_equipment` SET `custom`='',`cycle_time`='120',`tem_upper_limit`='22',`tem_buttom_limit`='1',`warehouse_id`='0',`floor_id`='0' WHERE `device_sn` = '861358037968401' [ RunTime:0.0048s ]
+NOTIC: [8] Undefined index: con_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: con_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: humi_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+NOTIC: [8] Undefined index: humi_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2018-03-05T17:35:59+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0022s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2018-03-05T17:36:02+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0035s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0033s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0032s ]
+NOTIC: [8] Undefined variable: the_first /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+NOTIC: [8] Undefined variable: the_end /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Page.class.php 第 148 行.
+SQL: SELECT * FROM `sw_equipment` WHERE ( 1=1 ) LIMIT 0,5   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `sw_user` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`username` FROM `sw_user`  [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2018-03-05T17:36:16+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0016s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0015s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2018-03-05T17:37:25+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0033s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0032s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: floor_id /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 493 行.
+NOTIC: [2] finfo_file(): Empty filename or path /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0034s ]
+SQL: UPDATE `sw_equipment` SET `custom`='',`cycle_time`='300',`tem_upper_limit`='5',`tem_buttom_limit`='2',`warehouse_id`='0',`floor_id`='0' WHERE `device_sn` = '861358037968401' [ RunTime:0.0038s ]
+NOTIC: [8] Undefined index: con_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: con_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: humi_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+NOTIC: [8] Undefined index: humi_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2018-03-05T17:37:26+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0033s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0034s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0033s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2018-03-05T18:42:17+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0021s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0019s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0019s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2018-03-05T18:43:27+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0038s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0037s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0035s ]
+NOTIC: [8] Undefined index: floor_id /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 493 行.
+NOTIC: [2] finfo_file(): Empty filename or path /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0039s ]
+SQL: UPDATE `sw_equipment` SET `custom`='',`cycle_time`='180',`tem_upper_limit`='3',`tem_buttom_limit`='2',`warehouse_id`='0',`floor_id`='0' WHERE `device_sn` = '861358037968401' [ RunTime:0.0043s ]
+NOTIC: [8] Undefined index: con_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: con_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: humi_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+NOTIC: [8] Undefined index: humi_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2018-03-05T18:43:28+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0033s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0032s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0031s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2018-03-05T18:47:32+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0033s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0032s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0032s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2018-03-05T18:48:26+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0028s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0027s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0027s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2018-03-05T18:49:43+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0032s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0033s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: floor_id /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 493 行.
+NOTIC: [2] finfo_file(): Empty filename or path /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0033s ]
+SQL: UPDATE `sw_equipment` SET `custom`='',`cycle_time`='300',`tem_upper_limit`='5',`tem_buttom_limit`='3',`warehouse_id`='0',`floor_id`='0' WHERE `device_sn` = '861358037968401' [ RunTime:0.0038s ]
+NOTIC: [8] Undefined index: con_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: con_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: humi_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+NOTIC: [8] Undefined index: humi_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+
+[ 2018-03-05T18:55:18+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0022s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2018-03-05T18:56:26+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0039s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0038s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0036s ]
+NOTIC: [8] Undefined index: floor_id /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 493 行.
+NOTIC: [2] finfo_file(): Empty filename or path /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: UPDATE `sw_equipment` SET `custom`='',`cycle_time`='360',`tem_upper_limit`='5',`tem_buttom_limit`='4',`warehouse_id`='0',`floor_id`='0' WHERE `device_sn` = '861358037968401' [ RunTime:0.0045s ]
+NOTIC: [8] Undefined index: con_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: con_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: humi_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+NOTIC: [8] Undefined index: humi_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+
+[ 2018-03-05T18:58:35+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0039s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0038s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2018-03-05T18:58:43+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0033s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0032s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: floor_id /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 493 行.
+NOTIC: [2] finfo_file(): Empty filename or path /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0034s ]
+SQL: UPDATE `sw_equipment` SET `custom`='',`cycle_time`='420',`tem_upper_limit`='6',`tem_buttom_limit`='5',`warehouse_id`='0',`floor_id`='0' WHERE `device_sn` = '861358037968401' [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: con_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: con_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: humi_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+NOTIC: [8] Undefined index: humi_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+
+[ 2018-03-05T19:00:09+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0033s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0032s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: floor_id /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 493 行.
+NOTIC: [2] finfo_file(): Empty filename or path /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0033s ]
+SQL: UPDATE `sw_equipment` SET `custom`='',`cycle_time`='420',`tem_upper_limit`='66',`tem_buttom_limit`='5',`warehouse_id`='0',`floor_id`='0' WHERE `device_sn` = '861358037968401' [ RunTime:0.0038s ]
+NOTIC: [8] Undefined index: con_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: con_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: humi_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+NOTIC: [8] Undefined index: humi_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+
+[ 2018-03-05T19:00:15+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0021s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0019s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006736s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2018-03-05T19:00:21+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0028s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0027s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: floor_id /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 493 行.
+NOTIC: [2] finfo_file(): Empty filename or path /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0028s ]
+SQL: UPDATE `sw_equipment` SET `custom`='',`cycle_time`='3960',`tem_upper_limit`='5',`tem_buttom_limit`='4',`warehouse_id`='0',`floor_id`='0' WHERE `device_sn` = '861358037968401' [ RunTime:0.0034s ]
+NOTIC: [8] Undefined index: con_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: con_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: humi_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+NOTIC: [8] Undefined index: humi_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+
+[ 2018-03-05T19:01:05+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0028s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0026s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0025s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2018-03-05T19:01:05+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0036s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0035s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0034s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2018-03-05T19:01:05+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/map?device_sn=861358037968401&dw=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0034s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0034s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sw_equipment` WHERE ( device_sn='861358037968401' )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `sw_warehouse` [ RunTime:0.0033s ]
+SQL: SELECT `name` FROM `sw_warehouse` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `sw_warehouse`  [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 75 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 87 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 192 行.
+NOTIC: [8] Use of undefined constant temperature - assumed 'temperature' /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 206 行.
+NOTIC: [8] Undefined variable: floor /data/www/ph3.yichiot.com/Application/Runtime/Cache/Admin/6e38fc0b45ffa2389b27bf96366051ca.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2018-03-05T19:01:11+08:00 ] 124.202.207.110 /index.php/Admin/Equipment/update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0016s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0015s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','156','148','157','158','159') AND `type` = 1 AND `status` = 1  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 157 AND `state` = 0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 158 AND `state` = 0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 159 AND `state` = 0  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: floor_id /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 493 行.
+NOTIC: [2] finfo_file(): Empty filename or path /data/www/ph3.yichiot.com/ThinkPHP/Library/Think/Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0017s ]
+SQL: UPDATE `sw_equipment` SET `custom`='',`cycle_time`='3300',`tem_upper_limit`='5',`tem_buttom_limit`='4',`warehouse_id`='0',`floor_id`='0' WHERE `device_sn` = '861358037968401' [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: con_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: con_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 518 行.
+NOTIC: [8] Undefined index: humi_upper_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+NOTIC: [8] Undefined index: humi_buttom_limit /data/www/ph3.yichiot.com/Application/Admin/Controller/EquipmentController.class.php 第 530 行.
+

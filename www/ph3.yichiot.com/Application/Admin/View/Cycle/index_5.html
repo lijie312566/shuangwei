@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+      <title>数据查询2</title>
+      <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/public.css"/>
+      <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/index.css"/>
+      
+   </head>
+   <body>
+      <div class="header">
+         <img src="__PUBLIC__/admin/img/logo.png"/>
+         <span>双维科技信息管理平台</span>
+      </div>
+      <div class="content content3 clearfix">
+         <div class="con_left">
+            <ul>
+               <li>
+                  <a href="{:U('Equipment/index');}">
+                     <img src="__PUBLIC__/admin/img/device2.png"/>
+                     <span>设备列表</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="{:U('Admin/Equipment/map')}">
+                     <img src="__PUBLIC__/admin/img/position1.png"/>
+                     <span>地图地理</span>
+                  </a>
+               </li>
+               <li class="actives">
+                  <a href="{:U('Cycle/index')}">
+                     <img src="__PUBLIC__/admin/img/date1.png"/>
+                     <span>数据展示</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="{:U('Admin/Equipment/manage')}">
+                     <img src="__PUBLIC__/admin/img/set1.png"/>
+                     <span>系统管理</span>
+                  </a>
+               </li>
+            </ul>
+            <img src="__PUBLIC__/admin/img/quit.png" class="quit"/>
+         </div>
+         <div class="con_middle date_search_t">
+            <div class="titles">
+               <ul class="clearfix">
+                  <!-- <li>
+                     <a href="#" class="actives">重新查询</a>
+                  </li> -->
+                  <li>
+                     <a class="actives" href="#">另存为Excel</a>
+                  </li>
+                  <li>
+                     <a class="actives" href="#">切换至曲线</a>
+                  </li>
+               </ul>
+            </div>
+
+            
+            <div style="overflow: hidden" class="one-wrap">
+               <div class="one" style="overflow-x: scroll">
+                  <table border="none" cellspacing="" cellpadding="" class="table">
+
+                     <tr>
+                        <th>设备编码</th>
+                        <foreach item="vo" name="arrayshift">
+                           <th  class="device" value="{$key}">{$key}</th>
+                        </foreach>
+                     </tr>
+                     <tr class="custom">
+                        <th>自定义信息</th>
+                        <foreach item="vo" name="data">
+                           <th>{$vo[$key]}</th>
+                        </foreach>
+                     </tr>
+
+                     <foreach item="vo" name="data">
+                        <tr >
+                           <td class="date" value="{$key}">{$key}</td>
+                           <volist name="vo" id="f">
+
+                              <td class="temp" value="{$vo[$key]['temperature']}"> 温度：{$vo[$key]['temperature']} >> 湿度：{$vo[$key]['humidity']}>>ph3浓度：{$vo[$key]['concentration']} </td>
+                           </volist>
+
+
+                        </tr>
+                     </foreach>
+
+
+
+
+                  </table>
+                  <div class="page">
+                     <ul class="clearfix">
+                        <li>{$page}</li>
+
+                     </ul>
+                  </div>
+               </div>
+               <div class="one two">
+                   <div id="main" style="width: 1600px;height:600px;" >sssss</div>  
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="__PUBLIC__/admin/js/jquery-3.1.0.js" ></script>
+      <script type="text/javascript" src="__PUBLIC__/admin/js/index.js" ></script>
+       <script src="https://code.highcharts.com/highcharts.js"></script>
+   </body>
+</html>
+<script language="JavaScript">
+$(document).ready(function() {
+  /* 设备名*/
+      var device ='';
+   $('.device').each(function(){
+      device += ','+$(this).attr('value');
+
+   })
+     device = device.substr(1);
+     device = device.split();
+
+  console.log(device);
+
+
+
+   /*日期*/
+   /*$('.date').val();*/
+    var date='';
+   $('.date').each(function(){
+      date += ','+$(this).attr('value');
+
+   })
+     date = date.substr(1);
+     date = date.split();
+
+  console.log(date);
+
+  /*温度*/
+
+
+
+
+
+
+
+
+
+   var title = {
+      text: '数据曲线展示'   
+   };
+   
+   var xAxis = {
+      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+         'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+   };
+   var yAxis = {
+      title: {
+         text: 'Temperature (\xB0C)'
+      },
+      plotLines: [{
+         value: 0,
+         width: 1,
+         color: '#808080'
+      }]
+   };   
+
+   var tooltip = {
+      valueSuffix: '\xB0C'
+   }
+
+   var legend = {
+      layout: 'vertical',
+      align: 'right',
+      verticalAlign: 'middle',
+      borderWidth: 0
+   };
+
+   var series =  [
+      {
+         name: 'Tokyo',
+         data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2,
+            26.5, 23.3, 18.3, 13.9, 9.6]
+      }, 
+      {
+         name: 'New York',
+         data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8,
+            24.1, 20.1, 14.1, 8.6, 2.5]
+      },
+      {
+         name: 'London',
+         data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 
+            16.6, 14.2, 10.3, 6.6, 4.8]
+      }
+   ];
+
+   var json = {};
+
+   json.title = title;
+   json.xAxis = xAxis;
+   json.yAxis = yAxis;
+   json.tooltip = tooltip;
+   json.legend = legend;
+   json.series = series;
+
+   $('#main').highcharts(json);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body{background-color: #12161f;}
+.login_content{margin:0 auto;/*width: 80%;*/padding-top: 260px;text-align: center;}
+.login_content .logo{margin:0 auto;width: 120px;height: 120px;}
+.login_content .title{font-size: 28px;color: #FFFFFF;margin: 25px 0 50px;}
+.login_content .login_mes input{width: 345px;height: 50px;padding-left: 55px;border-radius: 25px;font-size: 16px;color: #333;margin-bottom: 10px;}
+.login_content .login_mes input[name=user]{background: url(../img/use.png) no-repeat left;background-color: #FFFFFF;background-position: 22px;}
+.login_content .login_mes input[name=password]{background: url(../img/pas.png) no-repeat left;background-color: #FFFFFF;background-position: 22px;display: block;margin:0 auto 10px;}
+.login_content .login_mes .btn{width: 195px;padding: 0;margin-right: 6px;background-color: #FFFFFF;}
+.login_content .login_mes .btn1{padding-left: 25px;width: 170px;}
+.login_content .login_mes .sub{display: block;margin:20px auto 0;padding: 0;width: 400px;background-color: #ffcb15;font-size: 18px;color: #12161f;}
+.login_content .foot{font-size: 14px;color: #FFFFFF;position: absolute;bottom: 80px;width: 100%;}
+
+.alert {
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    top: 40%;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 15px;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+@media all and (max-height: 600px){
+   .login_content .foot {position: relative;
+    margin-top:30px;
+}
+}

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>地图地理2</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/index.css"/>
+</head>
+<body>
+<div class="header"><img src="__PUBLIC__/admin/img/logo.png"/> <span>双维科技信息管理平台</span></div>
+<div class="content content1 clearfix">
+    <div class="con_left">
+        <ul>
+            <li><a href="{:U('Admin/Equipment/index')}"> <img src="__PUBLIC__/admin/img/device1.png" class="icon1"/> <img src="__PUBLIC__/admin/img/device2.png"
+                                                                                      class="icon2"/> <span>设备列表</span>
+            </a></li>
+            <li><a href="{:U('Admin/Equipment/map')}"> <img src="__PUBLIC__/admin/img/position1.png" class="icon1"/> <img src="__PUBLIC__/admin/img/position2.png"
+                                                                                      class="icon2"/> <span>地图地理</span>
+            </a></li>
+            <li><a href="{:U('Admin/Cycle/index')}"> <img src="__PUBLIC__/admin/img/date1.png" class="icon1"/> <img src="__PUBLIC__/admin/img/date2.png"
+                                                                                           class="icon2"/>
+                <span>数据展示</span> </a></li>
+            <li><a href="{:U('Admin/Equipment/manage')}"> <img src="__PUBLIC__/admin/img/set1.png" class="icon1"/> <img src="__PUBLIC__/admin/img/set2.png" class="icon2"/>
+                <span>系统管理</span> </a></li>
+        </ul>
+        <a href="{:U('Admin/Index/logout')}"><img src="__PUBLIC__/admin/img/quit.png" class="quit"/></a>
+    </div>
+    <div class="con_middle map_middle2 clearfix">
+		<a href="{:U('Admin/Equipment/map').'?device_sn='.$data[0]['device_sn']}"> <img src="__PUBLIC__/admin/img/dt.png" class="img_show"/></a>
+
+        <div class="map_r map_m">  
+        <for start="0" end="count($list)"  name="i"> 
+            <!-- 这是一行摞起来 楼层-->
+            <div class="map_l_t">
+                    <div class="map_l_one">
+                   <!--  <span>{$list[$i+1]['num']}</span> -->
+                    <for start="0" end="$list[$i+1]['num']" name="j"> 
+                    <?php    foreach($list[$i+1]['device_sn'] as $kity=>$vval){  ?>
+                        <?php   if($list[$i+1]['device_sn'][$j]== $data[0]['device_sn'] ){ ?>
+                        <img src="__PUBLIC__/admin/img/position_red.png" style="left: <?php echo (100/($list[$i+1]['num']+3))*$j; ?>%; top: 49px;" data-toggle="tooltip" title="<?php echo $list[$i+1]['device_sn'][$j];  ?>" device_sn="{$list[$i+1]['device_sn'][$j]}"> 
+                        <?php    }else{    ?>
+                         <img src="__PUBLIC__/admin/img/position_blue.png" style="left: <?php echo (100/($list[$i+1]['num']+3))*$j; ?>%; top: 49px;" data-toggle="tooltip" title="<?php echo $list[$i+1]['device_sn'][$j];  ?>" device_sn="{$list[$i+1]['device_sn'][$j]}"> 
+                        <?php   }    ?>
+                    <?php   }    ?>
+                    </for>   
+                        
+                    </div>   
+            </div>
+            <p style="left:0;"><span class="ji" house_id="{$data[0]['warehouse_id']}" order="{$data[0]['warehouse']}">{$data[0]['warehouse']}</span></p>
+            
+        </for> 
+        </div> 
+    </div>
+   <!-- <div class="con_right map_right map_right_infor">
+        <ul>
+            <li><label for="">设备编码：</label> <span id="device_sn" value="{$data[0]['device_sn']}">{$data[0]['device_sn']}</span></li>
+            <li><label for="">自定义信息：</label> <span>{$data[0]['custom']}</span></li>
+            <li><label for="">实时数据：</label> <span>{$data[0]['temperature']} ℃&nbsp;&nbsp;{$data[0]['humidity']}%RH</span></li>
+            <li><label for="">剩余电量：</label> <span><img src="__PUBLIC__/admin/img/battery.png"/></span> <span>{$data[0]['electricity']}%</span></li>
+            <li><label for="">采集周期设置：</label> <span>{$data[0]['cycle_time']}</span></li>
+            <li><label for="">报警阀值设置：</label> <span> {$data[0]['buttom_limit']}-{$data[0]['upper_limit']}℃</span></li>
+            <li><label for="">位置：</label> <span>{$data[0]['warehouse']} &nbsp;&nbsp;{$data[0]['floor']}层</span></li>   
+            <li class="history"><label></label> <a href="javascript:void(0)"  onclick="showAll('#model')"  device_sn="{$data[0]['device_sn']}" class="set_search_btn">历史数据</a></li>
+            <li><label>补充信息：</label> <span>{$data[0]['supply']}</span></li>
+        </ul>
+        <a class="set_sb_btn" href="javascript:void(0)" onclick="showAll('#map_model')" device_sn="{$data[0]['device_sn']}"> 设置设备 </a>
+        <a class="btn_search" href="javascript:void(0)"> 
+            <span><img src="__PUBLIC__/admin/img/carry.png"/></span>
+            <span>呼唤</span></a>
+    </div>
+ -->
+    <div class="con_right map_right map_right_infor">
+        <ul>
+            <li><label for="">设备编码：</label> <span id="device_sn" value="{$data[0]['device_sn']}">{$data[0]['device_sn']}</span></li>
+            <li><label for="">自定义信息：</label> <span id="custom" value="{$data[0]['custom']}">{$data[0]['custom']}</span></li>
+            <li>
+                <label for="">实时数据：</label> 
+                    <if condition="$style eq temperature">
+                        <span>{$data[0]['temperature']} ℃</span>
+                    <elseif condition="$style eq humidity"/>
+                         <span>{$data[0]['humidity']}%RH</span>
+                    <elseif condition="$style eq concentration" /> 
+                         <span>{$data[0]['concentration']} ppm</span>
+                    <else/>
+                         <span>{$data[0]['co']} ppm</span>
+                    </if>
+            </li>
+            <li><label for="">剩余电量：</label><span>{$data[0]['electricity']}mV</span></li>
+            <li><label for="">采集周期设置：</label> <span>{$data[0]['cycle_time']}</span></li>
+            <li>
+                <label for="">报警阀值设置：</label> 
+                <if condition="$style eq temperature">
+                        <span> {$data[0]['tem_buttom_limit']}-{$data[0]['tem_upper_limit']}℃</span>
+                <elseif condition="$style eq humidity"/>
+                         <span> {$data[0]['humi_buttom_limit']}-{$data[0]['humi_upper_limit']}%RH</span>
+                <elseif condition="$style eq concentration" /> 
+                         <span> {$data[0]['con_buttom_limit']}-{$data[0]['con_upper_limit']} ppm</span>
+                <else/>
+                         <span> {$data[0]['co_buttom_limit']}-{$data[0]['co_upper_limit']} ppm</span>
+                </if>
+            </li>
+            <li><label for="">位置：</label> <span> {$data[0]['warehouse']} &nbsp;&nbsp;{$data[0]['floor_id']} 层</span></li>
+           <!--  <li><label for="">库区编辑：</label> <span>{$data[0]['warehouse_limit']}库</span></li>
+            <li><label for="">楼层编辑：</label> <span>{$data[0]['floor_limit']}层</span></li> -->
+            <li class="history"><label></label> <a href="javascript:void(0)"  onclick="showAll('#model')">历史数据</a></li>
+            <li><label>补充信息：</label> <span>{$data[0]['supply']}</span></li>
+        </ul>
+        <a class="set_sb_btn" href="javascript:void(0)" onclick="showAll('#map_model')"> 设置设备 </a>
+      <!--   <a class="set_sb_btn" href="javascript:void(0)" onclick="showAll('#warehouse_model')">添加库区</a> -->
+        <a class="btn_search" href="javascript:void(0)"> 
+            <span><img src="__PUBLIC__/admin/img/carry.png"/></span>
+            <span>呼唤</span></a>
+    </div>
+
+<!--弹窗-->
+<!-- <div class="alert_out">
+	<div class="alert_in">
+		<div class="alert_top">
+            <span>补充信息</span>
+            <img src="__PUBLIC__/admin/img/delete.png" class="alert_del"/>
+        </div>
+    	<div class="alert_bottom">
+            <p class="">word，excel，pdf，jpg，txt</p>
+            <input type="file" name="" id="" value="" class="file"/> 
+            <input type="button" name="" id="" value="上传文件" class="update"/> 
+            <input type="button" name="" id="" value="取消选择" class="cancel"/>
+        </div>
+	</div>
+</div>
+ -->
+<div id="mask" class="mask"></div>
+<div>
+    <form action="{:U('Admin/Cycle/index')}" method="POST" id="history_post" >
+    <div id="model" class="model"><img src="__PUBLIC__/admin/img/tc_close.png" alt="" class="tc_close">
+         <input type="hidden" name="ids" value=" " id="ids">
+          <input type="hidden" name="dw" value="{$dw}">
+        <h2>历史数据</h2>
+        <ul>
+              <li class="input_dx">
+                    <label for="">起止时间：</label>
+                    <b>from</b><span><input type="text" name="starting_point" id="test1"><img src="__PUBLIC__/admin/img/watch.png"></span>
+                    <b>to</b><span><input type="text" name="end" id="test2"><img src="__PUBLIC__/admin/img/watch.png"></span>
+                </li>
+                <li class="jg_dx">
+                    <label for="">间隔：</label>
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+                    <input type="text" name="interval">
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;</b>
+                    <select name="time">
+                      <!--   <option value="3">秒</option> -->
+                        <option value="2">分钟</option>
+                        <option value="1">小时</option>
+                    </select>
+                </li>
+        </ul>
+        <div class="sear_cancle">
+            <a href="javascript:void(0)" class="search_butt">查询</a> <a href="javascript:void(0)" class="cancle_butt">取消</a>
+        </div>
+    </div>
+    </form>
+</div>
+
+<div>
+    <div id="map_model" class="map_model"><img src="__PUBLIC__/admin/img/tc_close.png" alt="" class="tc_close">
+        <form action="{:U('Admin/Equipment/update')}" method="post" id="update_post" enctype="multipart/form-data" >
+            <input type="hidden" name="device_sn" value="" class="device_sn">
+        <ul>
+            <li class="input_dx">
+                <label for="">自定义信息：</label> 
+                <input type="text" placeholder="输入不大于15个字" name="custom">
+            </li>
+            <li class="input_cjzq">
+                <label for="">采集周期设置：</label>
+                <input type="text" name="cycle_time">
+                <select name="stime" id="">
+                    <option value="60">分钟</option>
+                    <option value="1">秒</option>
+                    <option value="3600">时</option>
+                </select>
+            </li>
+            <li class="input_bjfz">
+                <label for="">报警阀值设置上限：</label> 
+
+                    <if condition="$style eq temperature">
+                         <input type="text" name="tem_upper_limit">    <span>℃</span>
+                    <elseif condition="$style eq humidity"/>
+                          <input type="text" name="humi_upper_limit">   <span>%RH</span>
+                    <elseif condition="$style eq concentration" /> 
+                          <input type="text" name="con_upper_limit">  <span>ppm</span>
+                    <else/>
+                          <input type="text" name="co_upper_limit">   <span>ppm</span>
+                    </if>
+
+            </li>
+
+            <li class="input_bjfz">
+
+                <label for="">报警阀值设置下限：</label> 
+                
+                <if condition="$style eq temperature">
+                         <input type="text" name="tem_buttom_limit">    <span>℃</span>
+                    <elseif condition="$style eq humidity"/>
+                          <input type="text" name="humi_buttom_limit">   <span> %RH</span>
+                    <elseif condition="$style eq concentration" /> 
+                          <input type="text" name="con_buttom_limit">  <span> ppm</span>
+                    <else/>
+                          <input type="text" name="co_buttom_limit">   <span> ppm</span>
+                    </if>
+
+            </li>
+            <li class="input_wzaddr"><label for="">位置：库</label> 
+                <select name="warehouse_id" id="warehouse_id">
+                        <option>--请选择--</option>
+                    <foreach name="warehouse" item="vo">
+                        <option value="{$vo['id']}">{$vo['name']}</option>                   
+                    </foreach>
+                </select> 
+                <select name="floor_id" >
+                    <!-- <option value=""></option> -->
+                    <!-- <for start='1' end="$floor" name="i">
+                        <option value="{$i}">{$i}</option> 
+                    </for> -->
+                </select>层 
+            </li>
+            <!-- <li class="input_lcedit clearfix">
+                <label>楼层编辑：</label> 
+                <i class="clearfix"> 
+                    <span class="down">-</span>
+                        <input class="val" type="text" name="floor_limit" id="floor_limit" value="1"> 
+                    <span class="up">+</span> 
+                </i>
+            </li>
+            <li class="input_kqedit clearfix">
+                <label>库区编辑：</label>
+                <i class="clearfix"> 
+                    <span class="down">-</span>
+                    <input class="val" type="text" name="warehouse_limit" id="warehouse_limit" value="1"> 
+                    <span class="up">+</span> 
+                </i>
+            </li> -->
+            <li class="bc_infor"><label>补充信息：</label>
+               
+                <div>
+                    <div class="same_right"> 
+                        <input type="file" name="supply" id="" value="" placeholder="Arno管理的设备" class="btn">
+                    </div>
+                </div> 
+
+                <!--  <input type="file" name="supply" id="" value=""  class="file"/>  -->
+            </li>
+        </ul>
+        <div class="manage_sear_cancle">
+            <a href="javascript:void(0)" class="map_search_butt">保存</a> 
+            <a href="javascript:void(0)" class="map_cancle_butt">取消</a>
+        </div>
+    </form>
+    </div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/admin/js/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/H-ui.js"></script>
+<script src="__PUBLIC__/admin/js/src/laydate.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/index.js"></script>
+<script>
+    laydate.render({elem: '#test1', type: 'datetime'});
+    laydate.render({elem: '#test2', type: 'datetime'});
+</script>
+<script type="text/javascript">
+
+    $(function () { 
+        //库区即点及改
+        $('.ji').click(function(){
+            var  that = $(this);
+            var  house_id = that.attr('house_id');
+            var father = $(this).parent();
+            var order = that.attr('order');
+            father.html("<input   type='text'   value='"+order+"' />");
+       
+            father.children().blur(function(){
+                var order = $(this).val();
+                $.ajax({
+                    data:{house_id:house_id,order:order},
+                    type:'get',
+                    url:"{:U('Admin/Equipment/uphouse_name')}",
+                    dataType:'json',
+                    success:function(data){
+                        if(data==11){
+                            father.html(order);
+                            //alert('修改成功');
+                        }else{
+                            alert('修改失败');
+                        }
+                    }
+                });
+            });       
+        });
+
+
+
+        $("[data-toggle='tooltip']").tooltip();  
+
+        //鼠标滑过事件
+        $("[data-toggle='tooltip']").mouseover(function(){
+            $(this).siblings().attr('src','__PUBLIC__/admin/img/position_blue.png');
+            $(this).parent().parent().siblings().children().children().attr('src','__PUBLIC__/admin/img/position_blue.png');
+            $(this).attr('src', '__PUBLIC__/admin/img/position_red.png'); 
+
+            var device_sn = $(this).attr('device_sn');
+            //alert(device_sn);
+
+            $.ajax({
+                data:{device_sn:device_sn},
+                type:'get',
+                url:"{:U('Admin/Equipment/information')}",
+                dataType:'json',
+                success:function(data){
+                   //console.log(data);
+                   var str = '';
+                   str +='<ul>';
+                   str +='<li><label for="">设备编码：</label> <span id="device_sn" class="device_sn" value="'+data.device_sn+'">'+data.device_sn+'</span></li><li><label for="">自定义信息：</label><span>'+data.custom+'</span></li><li><label for="">实时数据：</label> <if condition="$style eq temperature"><span>'+data.temperature +'℃</span><elseif condition="$style eq humidity"/><span>'+data.humidity+'%RH</span><elseif condition="$style eq concentration" /><span>'+data.concentration+'ppm</span><else/><span>'+data.co+'ppm</span></if></li><li><label for="">剩余电量：</label><span>'+data.electricity+'mV</span></li><li><label for="">采集周期设置：</label> <span>'+data.cycle_time+'</span></li><li><label for="">报警阀值设置：</label><if condition="$style eq temperature"><span>'+data.tem_buttom_limit+'-'+data.tem_upper_limit+'℃</span><elseif condition="$style eq humidity"/><span>'+data.humi_buttom_limit+'-'+data.humi_upper_limit+'%RH</span><elseif condition="$style eq concentration" /> <span>'+data.con_buttom_limit+'-'+data.con_upper_limit+'ppm</span><else/><span>'+data.co_buttom_limit+'-'+data.co_upper_limit+'ppm</span></if></li><li><label for="">位置：</label><span>'+data.warehouse+'&nbsp;&nbsp;'+data.floor_id+'层</span></li><li class="history"><label></label> <a href="javascript:void(0)"  class="set_search_btn"   onclick="showAll(`#model`)" device_sn="'+data.device_sn+'" >历史数据</a></li><li><label>补充信息：</label><span>'+data.supply+'</span></li>';
+                   str += '</ul>';
+                   str +='<a class="set_sb_btn" href="javascript:void(0)" onclick="showAll(`#map_model`)" device_sn="'+data.device_sn+'"> 设置设备 </a><a class="btn_search" href="javascript:void(0)"><span><img src="__PUBLIC__/admin/img/carry.png"/></span><span>呼唤</span></a>';
+
+                    
+                    $('.map_right_infor').html(str);  
+                }
+            });
+        });
+     
+
+        //获取设备编码赋值到相应的位置 ----
+        $("body").delegate(".set_sb_btn","click",function(){
+            var get_device_sn = $(this).attr('device_sn'); //alert(get_device_sn);
+            $('#come_here').val(get_device_sn);
+        }); 
+
+
+         //历史搜索获取设备编码
+        $("body").delegate(".set_search_btn","click",function(){
+              var device_sn = $(this).attr('device_sn');
+            $('#ids').val(device_sn);
+        });
+
+
+         $('.map_search_butt').click(function(){
+            $("#update_post").submit();
+         })
+
+         
+        $('.search_butt').click(function(){
+            $('#history_post').submit();
+        });  
+
+
+
+     $("#warehouse_id").change(function(){
+        var warehouse_id = $(this).val(); 
+        var that = $(this);
+        $.ajax({
+            data:{warehouse_id:warehouse_id},
+            type:'get',
+            url:"{:U('Admin/Equipment/getfloor')}",
+            dataType:'json',
+            success:function(data){
+               var num = JSON.parse(data); //alert(num);
+                var str='';
+                   str +='<select name="floor_id" id="">';
+                   str+='<option>--请选择--</option>';
+                   for(var i=0;i<num;i++){
+                       str +='<option value="'+(i+1)+'">'+(i+1)+'</option>';
+                   }
+                   str +='</select>';
+                   that.nextAll().remove();
+                   that.after(str);
+            }
+        })
+    });
+
+
+
+
+    $('.up_date').click(function () {
+        alertClick();
+    });
+
+
+
+    $(".tc_close,.up_date,.cancle_butt,.map_cancle_butt").click(function () {
+        $(".map_model,#mask,.model").hide();
+    });
+
+
+}); 
+
+
+
+$(function(){
+     $('.map_search_butt').click(function(){
+        $("#update_post").submit();
+     })
+
+     var device_sn = $("#device_sn").attr('value');
+      $('#ids').val(device_sn);
+      $('.device_sn').val(device_sn);
+
+    $('.search_butt').click(function(){
+        $('#history_post').submit();
+    })  
+})   
+
+
+    function showMask(){  
+        $("#mask").css("height",$(document).height());
+        $("#mask").css("width",$(document).width());
+        $("#mask").show();
+    }
+
+    function letDivCenter(divName){
+        var top = ($(window).height() - $(divName).height())/2;
+        var left = ($(window).width() - $(divName).width())/2;
+        var scrollTop = $(document).scrollTop();
+        var scrollLeft = $(document).scrollLeft();
+        $(divName).css( { position : 'absolute', 'top' : top + scrollTop, left : left + scrollLeft } ).show(); 
+    }
+
+    function showAll(divName){
+        showMask();
+        letDivCenter(divName);
+    }
+
+
+
+
+/*$(".table tr td:first-child img").click(function(){
+    $(this).attr('src',$(this).attr('src')=='__PUBLIC__/admin/img/square.png'?'__PUBLIC__/admin/img/square2.png':'__PUBLIC__/admin/img/square.png');
+});  */
+
+
+</script>
+</body>
+</html>

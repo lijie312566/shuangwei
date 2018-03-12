@@ -1,0 +1,1430 @@
+[ 2017-12-12T10:04:19+08:00 ] ::1 /right/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0320s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0170s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 15 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 15 行.
+NOTIC: [8] Use of undefined constant front_status - assumed 'front_status' C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 25 行.
+NOTIC: [8] Undefined index: front_status C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 25 行.
+NOTIC: [8] Use of undefined constant user_status - assumed 'user_status' C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 30 行.
+NOTIC: [8] Undefined index: user_status C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 30 行.
+NOTIC: [8] Use of undefined constant front_username - assumed 'front_username' C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 35 行.
+NOTIC: [8] Undefined index: front_username C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Array to string conversion C:\wamp\www\right\ThinkPHP\Library\Think\View.class.php 第 91 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T10:04:26+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Equipment
+
+[ 2017-12-12T10:26:14+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+ERR: 模板不存在:./Application/Admin/View/Equipment/index.html
+
+[ 2017-12-12T10:27:09+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-12T10:29:17+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-12T10:32:47+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0000s ]
+ERR: 模板不存在:./Application/Admin/View/Equipment/data.html
+
+[ 2017-12-12T10:33:18+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T10:59:32+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T14:41:22+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T14:42:28+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T14:43:30+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-12T14:43:45+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-12T14:48:24+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-12T14:48:25+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T14:48:28+08:00 ] ::1 /right/Admin/Equipment/index?code=&code=&code=&code=&code=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T14:49:09+08:00 ] ::1 /right/Admin/Equipment/index?code=&code=&code=&code=&code=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T14:49:35+08:00 ] ::1 /right/Admin/Equipment/index?code=&code=&code=&code=&code=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-12T14:50:03+08:00 ] ::1 /right/Admin/Equipment/index?code=&code=&code=&code=&code=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T14:50:25+08:00 ] ::1 /right/Admin/Equipment/index?code=&code=&code=&code=&code=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-12T14:50:57+08:00 ] ::1 /right/Admin/Equipment/index?code=&code=&code=&code=&code=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-12T14:59:04+08:00 ] ::1 /right/Admin/Equipment/index?code=&code=&code=&code=&code=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T14:59:12+08:00 ] ::1 /right/index.php/Admin/Equipment/dataadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T14:59:22+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-12T14:59:26+08:00 ] ::1 /right/Admin/Rule/rule_group
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_group`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T14:59:28+08:00 ] ::1 /right/index.php/Admin/Rule/rule_distribution/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` ORDER BY id is null,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T14:59:40+08:00 ] ::1 /right/index.php/Admin/Rule/rule_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sw_auth_rule` ORDER BY id is null,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-12T15:00:25+08:00 ] ::1 /right/index.php/Admin/Rule/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: INSERT INTO `sw_auth_rule` (`pid`,`title`,`state`,`name`) VALUES ('147','添加设备','1','Admin/Equipment/dataadd') [ RunTime:0.0600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-12T15:00:26+08:00 ] ::1 /right/index.php/Admin/Rule/rule_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` ORDER BY id is null,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T15:00:28+08:00 ] ::1 /right/index.php/Admin/Rule/rule_group
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_group`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T15:00:29+08:00 ] ::1 /right/index.php/Admin/Rule/rule_distribution/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` ORDER BY id is null,id  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T15:00:35+08:00 ] ::1 /right/index.php/Admin/Rule/rule_distribution/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group` [ RunTime:0.0040s ]
+NOTIC: [2] trim() expects parameter 1 to be string, array given C:\wamp\www\right\Application\Common\Model\BaseModel.class.php 第 32 行.
+SQL: UPDATE `sw_auth_group` SET `id`='1',`rules`='1,14,143,144,6,2,3,15,16,17,18,4,20,21,7,8,10,19,150,152,147,155,148' WHERE `id` = 1 [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-12T15:00:36+08:00 ] ::1 /right/index.php/Admin/Rule/rule_group
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_group`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T15:00:48+08:00 ] ::1 /right/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 15 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 15 行.
+NOTIC: [8] Use of undefined constant front_status - assumed 'front_status' C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 25 行.
+NOTIC: [8] Undefined index: front_status C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 25 行.
+NOTIC: [8] Use of undefined constant user_status - assumed 'user_status' C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 30 行.
+NOTIC: [8] Undefined index: user_status C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 30 行.
+NOTIC: [8] Use of undefined constant front_username - assumed 'front_username' C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 35 行.
+NOTIC: [8] Undefined index: front_username C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Array to string conversion C:\wamp\www\right\ThinkPHP\Library\Think\View.class.php 第 91 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T15:00:51+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-12T15:01:00+08:00 ] ::1 /right/index.php/Admin/Equipment/dataadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-12T15:03:28+08:00 ] ::1 /right/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-12-12T15:03:35+08:00 ] ::1 /right/index.php/Admin/Equipment/dataadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T15:07:09+08:00 ] ::1 /right/index.php/Admin/Equipment/dataadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0030s ]
+SQL: INSERT INTO `sw_equipment` (`code`,`custom`,`warehouse_id`,`layer_id`,`floor_id`) VALUES ('1','2','3','4','5') [ RunTime:0.0920s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-12T15:09:39+08:00 ] ::1 /right/index.php/Admin/Equipment/dataadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0030s ]
+SQL: INSERT INTO `sw_equipment` (`code`,`custom`,`warehouse_id`,`layer_id`,`floor_id`,`time`) VALUES ('1','2','3','4','5','1513062579') [ RunTime:0.0840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T15:12:11+08:00 ] ::1 /right/index.php/Admin/Equipment/dataadd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: INSERT INTO `sw_equipment` (`code`,`custom`,`warehouse_id`,`layer_id`,`floor_id`,`time`) VALUES ('1','2','3','4','5','1513062731') [ RunTime:0.0720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-12-12T15:12:12+08:00 ] ::1 /right/index.php/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T16:15:18+08:00 ] ::1 /right/index.php/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-12T16:17:28+08:00 ] ::1 /right/index.php/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-12-12T16:24:57+08:00 ] ::1 /right/index.php/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T16:34:14+08:00 ] ::1 /right/index.php/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T16:34:16+08:00 ] ::1 /right/index.php/Admin/Equipment/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_equipment` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_equipment`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-12-12T16:34:19+08:00 ] ::1 /right/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `sw_auth_rule` WHERE `id` IN ('1','14','143','144','6','2','3','15','16','17','18','4','20','21','7','8','10','19','150','152','147','155','148') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 1 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 147 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 6 AND `state` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE `pid` = 148 AND `state` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 15 行.
+NOTIC: [8] Undefined offset: 0 C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 15 行.
+NOTIC: [8] Use of undefined constant front_status - assumed 'front_status' C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 25 行.
+NOTIC: [8] Undefined index: front_status C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 25 行.
+NOTIC: [8] Use of undefined constant user_status - assumed 'user_status' C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 30 行.
+NOTIC: [8] Undefined index: user_status C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 30 行.
+NOTIC: [8] Use of undefined constant front_username - assumed 'front_username' C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 35 行.
+NOTIC: [8] Undefined index: front_username C:\wamp\www\right\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Array to string conversion C:\wamp\www\right\ThinkPHP\Library\Think\View.class.php 第 91 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+

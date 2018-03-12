@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="106f6fd7-1727-4b7f-a22c-746fb97a6ce5" name="天使酒" url="http://60.205.201.20">
+        <fileTransfer host="60.205.201.20" port="21" username="tianshijiu">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>地图地理</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+<div class="header"><img src="img/logo.png"/> <span>双维科技信息管理平台</span></div>
+<div class="content content1 clearfix">
+    <div class="con_left">
+        <ul>
+            <li><a href="index.html"> <img src="img/device1.png" class="icon1"/> <img src="img/device2.png"
+                                                                                      class="icon2"/> <span>设备列表</span>
+            </a></li>
+            <li><a href="map.html"> <img src="img/position1.png" class="icon1"/> <img src="img/position2.png"
+                                                                                      class="icon2"/> <span>地图地理</span>
+            </a></li>
+            <li><a href="date-search2.html"> <img src="img/date1.png" class="icon1"/> <img src="img/date2.png"
+                                                                                           class="icon2"/>
+                <span>数据展示</span> </a></li>
+            <li><a href="manage.html"> <img src="img/set1.png" class="icon1"/> <img src="img/set2.png" class="icon2"/>
+                <span>系统管理</span> </a></li>
+        </ul>
+        <a href="#"><img src="img/quit.png" class="quit"/></a></div>
+    <div class="con_middle map_middle"><img src="img/map_03.png"/> <a href="map2.html"><img src="img/q.png"
+                                                                                            class="q"></a></div>
+    <div class="con_right map_right map_right_infor">
+        <ul>
+            <li><label for="">设备编码：</label> <span>Ax1010214578512</span></li>
+            <li><label for="">自定义信息：</label> <span>Ax1010214578512</span></li>
+            <li><label for="">实时数据：</label> <span>26 ℃&nbsp;&nbsp;40%RH</span></li>
+            <li><label for="">剩余电量：</label> <span><img src="img/battery.png"/></span> <span>60%</span></li>
+            <li><label for="">采集周期设置：</label> <span>26 ℃&nbsp;&nbsp;40%RH</span></li>
+            <li><label for="">报警阀值设置：</label> <span>26 ℃</span></li>
+            <li><label for="">位置：</label> <span>库1 5层</span></li>
+            <li><label for="">楼层编辑：</label> <span>1</span></li>
+            <li><label for="">库区编辑：</label> <span>5层</span></li>
+            <li class="history"><label></label> <a href="javascript:void(0)"  onclick="showAll('#model')">历史数据</a></li>
+            <li><label>补充信息：</label> <span>Amo管理的设备</span></li>
+        </ul>
+        <!-- <div class="code clearfix same">						<h2>设备编码：</h2>						<span>Ax1010214578512</span>					</div>					<div class="mes clearfix same">						<h2>自定义信息：</h2>						<div class="same_right">							<input type="text" name="" id="" value="" placeholder="Arno管理的设备" class="btn"/>							<div class="img">								<img src="img/pen (2).png"/>							</div>						</div>					</div>					<div class="des clearfix">						<div class="des_l clearfix">							<h2>实时数据：</h2>							<span>26 ℃</span>							<span>40%RH</span>						</div>						<div class="des_r clearfix">							<h2>剩余电量：</h2>							<span><img src="img/battery.png"/></span>							<span>60%</span>						</div>					</div>					<div class="floor">						<div class="cycles clearfix">							<h2 class="h2">采集周期设置：</h2>							<div class="cycles_in">								<i class="clearfix">									<span></span>									<span><b class="img_top"><img src="img/up_03.png"/></b><img src="img/down_03.png"/></span>								</i>								<i class="clearfix">									<span></span>									<span class="img_r"><img src="img/down_03.png"/></span>								</i>							</div>						</div>						<div class="set cycles clearfix">							<h2 class="h2">报警阈值设置：</h2>							<div class="cycles_in clearfix">								<i class="clearfix">									<span></span>									<span><b class="img_top"><img src="img/up_03.png"/></b><img src="img/down_03.png"/></span>								</i>								<span>℃</span>							</div>						</div>						<div class="place">							<h2 class="h2">位置：</h2>							<i class="clearfix">								<span>库1</span>								<span><img src="img/down_05.png"/></span>							</i>							<i class="clearfix">								<span>5层</span>								<span><img src="img/down_05.png"/></span>							</i>						</div>						<div class="up_down">							<h2 class="h2">楼层编辑：</h2>							<i class="clearfix">								<span>-</span>								<input type="text" name="" id="" value="1" />								<span>+</span>							</i>						</div>						<div class="up_down">							<h2 class="h2">库区编辑：</h2>							<i class="clearfix">								<span>-</span>								<input type="text" name="" id="" value="1" />								<span>+</span>							</i>						</div>						<div class="history">							<h2 class="h2"></h2>							<a href="#">历史数据</a>						</div>						<div class="mes clearfix same sup">							<h2 class="h2">补充信息：</h2>							<div class="same_right">								<input type="text" name="" id="" value="" placeholder="Arno管理的设备" class="btn"/>								<div class="img up_date">上传</div>							</div>						</div>											</div> -->
+        <a class="set_sb_btn" href="#" onclick="alertClick();"> 设置设备 </a> <a class="btn_search" href="#"> <span><img
+            src="img/carry.png"/></span> <span>呼唤</span> </a></div>
+</div>
+<!--弹窗-->
+<div class="alert_out">
+    <div class="alert_in">
+        <div class="alert_top"><span>自定义信息</span> <img src="img/delete.png" class="alert_del"/></div>
+        <div class="alert_bottom">
+            <input type="text" placeholder="最多不超过15个字..." class="more-input">
+            <input type="file" name="" id="" value="" class="file"/>
+            <input type="button" name="" id="" value="确定" class="update"/>
+            <input type="button" name="" id="" value="取消选择" class="cancel"/></div>
+    </div>
+</div>
+<div id="mask" class="mask"></div>
+<div>
+    <div id="model" class="model"><img src="img/tc_close.png" alt="" class="tc_close">
+
+        <h2>历史数据</h2>
+        <ul>
+            <li class="input_dx"><label for="">起止时间：</label> <b>from</b><span><input type="text" id="test1"><img
+                    src="img/watch.png"></span> <b>to</b><span><input type="text" id="test2"><img
+                    src="img/watch.png"></span> <!-- <input type="text"><span>日</span> -->            </li>
+            <!--         	<li class="input_dx minute_second clearfix">        		<span>分</span><input type="text">        		<span>时</span><input type="text">        	</li> -->
+            <li class="jg_dx"><label for="">间隔：</label> <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> <input
+                    type="text"> <b>&nbsp;&nbsp;&nbsp;&nbsp;</b> <select name="" id="">
+                <option value="">分钟</option>
+                <option value="">秒</option>
+                <option value="">小时</option>
+            </select></li>
+        </ul>
+        <div class="sear_cancle"><a href="###" class="search_butt">查询</a> <a href="###" class="cancle_butt">取消</a></div>
+    </div>
+</div>
+<!--<div>-->
+    <!--<div id="map_model" class="map_model"><img src="img/tc_close.png" alt="" class="tc_close">-->
+        <!--<ul>-->
+            <!--<li class="input_dx"><label for="">自定义信息：</label> <input type="text" placeholder="输入不大于15个字"></li>-->
+            <!--<li class="input_cjzq"><label for="">采集周期设置：</label> <input type="text"> <select name="" id="">-->
+                <!--<option value="">分钟</option>-->
+                <!--<option value="">秒</option>-->
+                <!--<option value="">时</option>-->
+            <!--</select></li>-->
+            <!--<li class="input_bjfz"><label for="">报警阀值设置：</label> <input type="text"> <span>℃</span></li>-->
+            <!--<li class="input_wzaddr"><label for="">位置：</label> <select name="" id="">-->
+                <!--<option value="">库1</option>-->
+                <!--<option value="">库2</option>-->
+                <!--<option value="">库3</option>-->
+            <!--</select> <select name="" id="">-->
+                <!--<option value="">1层</option>-->
+                <!--<option value="">2层</option>-->
+                <!--<option value="">3层</option>-->
+            <!--</select></li>-->
+            <!--<li class="input_lcedit clearfix"><label>楼层编辑：</label> <i class="clearfix"> <span class="down">-</span>-->
+                <!--<input class="val" type="text" name="" id="" value="1"> <span class="up">+</span> </i></li>-->
+            <!--<li class="input_kqedit clearfix"><label>库区编辑：</label> <i class="clearfix"> <span class="down">-</span>-->
+                <!--<input class="val" type="text" name="" id="" value="1"> <span class="up">+</span> </i></li>-->
+            <!--<li class="bc_infor"><label>补充信息：</label>-->
+
+                <!--<div>-->
+                    <!--<div class="same_right"><input type="text" name="" id="" value="" placeholder="Arno管理的设备"-->
+                                                   <!--class="btn">-->
+
+                        <!--<div class="img up_date">上传</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+        <!--</ul>-->
+        <!--<div class="manage_sear_cancle"><a href="###" class="map_search_butt">保存</a> <a href="###"-->
+                                                                                        <!--class="map_cancle_butt">取消</a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    $('.up_date').click(function () {
+        alertClick();
+    })
+</script>
+<script type="text/javascript">
+    $(".tc_close,.up_date").click(function () {
+        $(".map_model,#mask,.model").hide();
+    });
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+    }
+    function letDivCenter(divName) {
+        var top = ($(window).height() - $(divName).height()) / 2;
+        var left = ($(window).width() - $(divName).width()) / 2;
+        var scrollTop = $(document).scrollTop();
+        var scrollLeft = $(document).scrollLeft();
+        $(divName).css({position: 'absolute', 'top': top + scrollTop, left: left + scrollLeft}).show();
+    }
+    function showAll(divName) {
+        showMask();
+        letDivCenter(divName);
+    }  </script>
+</body>
+</html>

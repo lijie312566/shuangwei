@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>数据查询2</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/index.css"/>
+		
+	</head>
+	<body>
+		<div class="header">
+			<img src="__PUBLIC__/admin/img/logo.png"/>
+			<span>双维科技信息管理平台</span>
+		</div>
+		<div class="content content3 clearfix">
+			<div class="con_left">
+				<ul>
+					<li>
+						<a href="{:U('Equipment/index');}">
+							<img src="__PUBLIC__/admin/img/device2.png"/>
+							<span>设备列表</span>
+						</a>
+					</li>
+					<li>
+						<a href="{:U('Admin/Equipment/map')}">
+							<img src="__PUBLIC__/admin/img/position1.png"/>
+							<span>地图地理</span>
+						</a>
+					</li>
+					<li class="actives">
+						<a href="{:U('Cycle/index')}">
+							<img src="__PUBLIC__/admin/img/date1.png"/>
+							<span>数据展示</span>
+						</a>
+					</li>
+					<li>
+						<a href="{:U('Admin/Equipment/manage')}">
+							<img src="__PUBLIC__/admin/img/set1.png"/>
+							<span>系统管理</span>
+						</a>
+					</li>
+				</ul>
+				<img src="__PUBLIC__/admin/img/quit.png" class="quit"/>
+			</div>
+			<div class="con_middle date_search_t">
+				<div class="titles">
+					<ul class="clearfix">
+						<!-- <li>
+							<a href="#" class="actives">重新查询</a>
+						</li> -->
+						<li>
+							<a class="actives" href="#">另存为Excel</a>
+						</li>
+						<li>
+							<a class="actives" href="#">切换至曲线</a>
+						</li>
+					</ul>
+				</div>
+
+				
+				<div style="overflow: hidden" class="one-wrap">
+					<div class="one" style="overflow-x: scroll">
+						<table border="none" cellspacing="" cellpadding="" class="table">
+
+							<tr>
+								<th>设备编码</th>
+								<foreach item="vo" name="arrayshift">
+									<th>{$key}</th>
+								</foreach>
+							</tr>
+							<tr>
+								<th>自定义信息</th>
+								<foreach item="vo" name="data">
+									<th>{$vo[$key]}</th>
+								</foreach>
+							</tr>
+
+							<foreach item="vo" name="data">
+								<tr>
+									<td>{$key}</td>
+									<volist name="vo" id="f">
+
+										<td>{$vo[$key]['concentration']} >> {$vo[$key]['temperature']} >> {$vo[$key]['humidity']}</td>
+									</volist>
+
+
+								</tr>
+							</foreach>
+
+
+
+
+						</table>
+						<div class="page">
+							<ul class="clearfix">
+								<li>{$page}</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="one two">
+						 <div id="main" style="width: 800px;height:600px;" >sssss</div>  
+						
+					</div>
+				</div>
+			</div>
+
+
+   <div class="con_middle date_search_t">
+            <div class="titles">
+               <ul class="clearfix">
+                  <!-- <li>
+                     <a href="#" class="actives">重新查询</a>
+                  </li> -->
+                  <li>
+                     <a class="actives" href="#">另存为Excel</a>
+                  </li>
+                  <li>
+                     <a class="actives" href="#">切换至曲线</a>
+                  </li>
+               </ul>
+            </div>
+
+            
+            <div style="overflow: hidden" class="one-wrap">
+               <div class="one" style="overflow-x: scroll">
+                  <table border="none" cellspacing="" cellpadding="" class="table">
+
+                     <tr>
+                        <th>设备编码</th>
+                        <foreach item="vo" name="arrayshift">
+                           <th  class="device" value="{$key}">{$key}</th>
+                        </foreach>
+                     </tr>
+                     <tr class="custom">
+                        <th>自定义信息</th>
+                        <foreach item="vo" name="data">
+                           <th>{$vo[$key]}</th>
+                        </foreach>
+                     </tr>
+
+                     <foreach item="vo" name="data">
+                        <tr >
+                           <td class="date">{$key}</td>
+                           <volist name="vo" id="f">
+
+                              <td class="info"><span>{$vo[$key]['concentration']}</span> >> span {$vo[$key]['temperature']} >> {$vo[$key]['humidity']}</td>
+                           </volist>
+
+
+                        </tr>
+                     </foreach>
+
+
+
+
+                  </table>
+                  <div class="page">
+                     <ul class="clearfix">
+                        <li>{$page}</li>
+
+                     </ul>
+                  </div>
+               </div>
+               <div class="one two">
+                   <div id="main" style="width: 1600px;height:600px;" >sssss</div>  
+                  
+               </div>
+            </div>
+         </div>
+
+		</div>
+		<script type="text/javascript" src="__PUBLIC__/admin/js/jquery-3.1.0.js" ></script>
+    	<script type="text/javascript" src="__PUBLIC__/admin/js/index.js" ></script>
+    	 <script src="https://code.highcharts.com/highcharts.js"></script>
+      <!--    <script src="__PUBLIC__/admin/js/echarts.js"></script>   
+      <script  type="text/javascript" src="http://echarts.baidu.com/build/dist/echarts.js"></script>-->
+	</body>
+</html>
+<script>
+	var myChart = echarts.init(document.getElementById('main'));  // 直接开始初始化，还是要用原生javascript  
+          var option = {
+	                    title : {
+	                        text: '数据图表', 
+	                    },
+	                    tooltip : {
+	                        trigger: 'axis'
+	                    },
+	                    legend: {
+	                        data:['最高气温','最低气温']
+	                    },
+	                    toolbox: {
+	                        show : true,
+	                        feature : {
+	                            mark : {show: true},
+	                            dataView : {show: true, readOnly: false},
+	                            magicType : {show: true, type: ['line', 'bar']},
+	                            restore : {show: true},
+	                            saveAsImage : {show: true}
+	                        }
+	                    },
+	                    calculable : true,
+	                    xAxis : [
+	                        {
+	                            type : 'category',
+	                            boundaryGap : false,
+	                            data : ['周一','周二','周三','周四','周五','周六','周日']
+	                        }
+	                    ],
+	                    yAxis : [
+	                        {
+	                            type : 'value',
+	                            axisLabel : {
+	                                formatter: '{value} °C'
+	                            }
+	                        }
+	                    ],
+	                    series : [
+	                        {
+	                            name:'最高气温',
+	                            type:'line',
+	                            data:[11, 11, 15, 13, 12, 13, 10],
+	                            markPoint : {
+	                                data : [
+	                                    {type : 'max', name: '最大值'},
+	                                    {type : 'min', name: '最小值'}
+	                                ]
+	                            },
+	                            markLine : {
+	                                data : [
+	                                    {type : 'average', name: '平均值'}
+	                                ]
+	                            }
+	                        },
+	                        {
+	                            name:'最低气温',
+	                            type:'line',
+	                            data:[1, -2, 2, 5, 3, 2, 0],
+	                            markPoint : {
+	                                data : [
+	                                    {name : '周最低', value : -2, xAxis: 1, yAxis: -1.5}
+	                                ]
+	                            },
+	                            markLine : {
+	                                data : [
+	                                    {type : 'average', name : '平均值'}
+	                                ]
+	                            }
+	                        }
+	                    ]
+            		};
+
+             		myChart.setOption(option); // 加载图表   
+           $.ajax({
+                url:"{:U('Cycle/index');}",  
+                type:'get',  
+                dataType:'json',  
+                success:function(jsons){  
+                    var Item = function(){  
+	                    return {  
+	                        name:'',  
+	                        type:'line',  
+	                        itemStyle: {normal: 
+	                                        {areaStyle:
+	                                            {type: 'default',opacity:isArea}
+	                                        }
+	                                    },  
+	                                label: {
+	                                    normal:
+	                                    {   show: isShowAllData,
+	                                        position: 'top'
+	                                    }
+	                                },  
+	                                markLine: 
+	                                {data:
+	                                    [{type: 'average', name: '平均值'}]
+	                                },  
+	                                data:[]  
+	                    }  
+                	};
+
+                	var legends = [];// 准备存放图例数据  
+	                var Series = []; // 准备存放图表数据  
+	                var json = jsons.data;// 后台返回的json  
+	                for(var i=0;i < json.length;i++){  
+                    	var it = new Item();  
+	                    it.name = json[i].name;// 先将每一项填充数据  
+	                    legends.push(json[i].name);// 将每一项的图例名称也放到图例的数组中  
+	                    it.data = json[i].data;  
+	                    Series.push(it);// 将item放在series中  
+                	}  
+                }
+           });
+
+
+
+</script>

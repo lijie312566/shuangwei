@@ -1,0 +1,109 @@
+[ 2018-02-04T03:20:38+08:00 ] 54.149.111.200 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0220s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0218s ]
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: e /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 37 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 42 行.
+
+[ 2018-02-04T03:20:40+08:00 ] 54.149.111.200 /admin/phpmyadmin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-02-04T03:20:41+08:00 ] 54.149.111.200 /admin/phpMyAdmin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+ERR: 无法加载控制器:PhpMyAdmin
+
+[ 2018-02-04T03:20:41+08:00 ] 54.149.111.200 /admin/sysadmin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+ERR: 无法加载控制器:Sysadmin
+
+[ 2018-02-04T03:20:41+08:00 ] 54.149.111.200 /admin/sqladmin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+ERR: 无法加载控制器:Sqladmin
+
+[ 2018-02-04T03:20:41+08:00 ] 54.149.111.200 /admin/db/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+ERR: 无法加载控制器:Db
+
+[ 2018-02-04T03:20:42+08:00 ] 54.149.111.200 /admin/web/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+ERR: 无法加载控制器:Web
+
+[ 2018-02-04T03:20:42+08:00 ] 54.149.111.200 /admin/pMA/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+ERR: 无法加载控制器:PMA
+
+[ 2018-02-04T14:29:05+08:00 ] 120.40.180.54 /index.php/Admin/Cycle/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `sw_auth_group_access` [ RunTime:0.0219s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM sw_auth_group_access a INNER JOIN sw_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0218s ]
+SQL: SHOW COLUMNS FROM `sw_auth_rule` [ RunTime:0.0219s ]
+SQL: SELECT * FROM `sw_auth_rule` WHERE ( pid=0 )  [ RunTime:0.0219s ]
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: e /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 37 行.
+NOTIC: [8] Undefined index: user /data/www/ph3.yichiot.com/Application/Common/Controller/AdminBaseController.class.php 第 42 行.
+

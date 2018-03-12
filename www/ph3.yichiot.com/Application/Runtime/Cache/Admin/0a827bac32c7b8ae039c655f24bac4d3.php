@@ -1,0 +1,403 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>地图地理</title>
+    <link rel="stylesheet" type="text/css" href="/Public/admin/css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="/Public/admin/css/index.css"/>
+   <!--  <style type="text/css">
+    body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+    </style> -->
+
+
+<!-- <style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style> -->
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+
+</head>
+<body>
+<div class="header"><img src="/Public/admin/img/logo.png"/> <span>双维科技信息管理平台</span></div>
+<div class="content content1 clearfix">
+    <div class="con_left">
+        <ul>
+            <li>
+                <a href="<?php echo U('Admin/Equipment/index');?>"> 
+                    <img src="/Public/admin/img/device1.png" class="icon1"/> 
+                    <img src="/Public/admin/img/device2.png"  class="icon2"/> 
+                    <span>设备列表</span>
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo U('Admin/Equipment/map');?>"> 
+                    <img src="/Public/admin/img/position1.png" class="icon1"/> 
+                    <img src="/Public/admin/img/position2.png" class="icon2"/> 
+                    <span>地图地理</span>
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo U('Admin/Cycle/index');?>"> 
+                    <img src="/Public/admin/img/date1.png" class="icon1"/> 
+                    <img src="/Public/admin/img/date2.png" class="icon2"/>
+                    <span>数据展示</span> 
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo U('Admin/Equipment/manage');?>"> 
+                    <img src="/Public/admin/img/set1.png" class="icon1"/> 
+                    <img src="/Public/admin/img/set2.png" class="icon2"/>
+                    <span>系统管理</span> 
+                </a>
+            </li>
+        </ul>
+        <a href="<?php echo U('Admin/Index/logout');?>"><img src="/Public/admin/img/quit.png" class="quit"/></a>
+    </div>
+
+
+    <div class="con_middle map_middle">        
+         <div style="width:100%;min-height:200px;height:768px;max-height:800px;border:#ccc solid 1px;" id="allmap"></div>
+        <a href="<?php echo U('Admin/Equipment/map2').'/?device_sn='.$data[0]['device_sn'];?>"><img src="/Public/admin/img/q.png"   class="q"></a>
+    </div>
+    <input type="hidden" value="<?php echo ($data[0]['lon']); ?>" name="lon" id="lon">
+    <input type="hidden"  value="<?php echo ($data[0]['lat']); ?>" name="lat" id="lat">
+
+     <div class="con_right map_right map_right_infor">
+        <ul>
+            <li><label for="">设备编码：</label> <span id="device_sn" value="<?php echo ($data[0]['device_sn']); ?>"><?php echo ($data[0]['device_sn']); ?></span></li>
+            <li><label for="">自定义信息：</label> <span id="custom" value="<?php echo ($data[0]['custom']); ?>"><?php echo ($data[0]['custom']); ?></span></li>
+            <li><label for="">实时数据：</label> <span><?php echo ($data[0]['temperature']); ?> ℃&nbsp;&nbsp;<?php echo ($data[0]['humidity']); ?>%RH</span></li>
+            <li><label for="">剩余电量：</label> <span><img src="/Public/admin/img/battery.png"/></span> <span><?php echo ($data[0]['electricity']); ?>%</span></li>
+            <li><label for="">采集周期设置：</label> <span><?php echo ($data[0]['cycle_time']); ?></span></li>
+            <li><label for="">报警阀值设置：</label> <span> <?php echo ($data[0]['buttom_limit']); ?>-<?php echo ($data[0]['upper_limit']); ?>℃</span></li>
+            <li><label for="">位置：</label> <span>库<?php echo ($data[0]['warehouse']); ?> &nbsp;&nbsp;<?php echo ($data[0]['floor_id']); ?></span></li>
+           <!--  <li><label for="">库区编辑：</label> <span><?php echo ($data[0]['warehouse_limit']); ?>库</span></li>
+            <li><label for="">楼层编辑：</label> <span><?php echo ($data[0]['floor_limit']); ?>层</span></li> -->
+            <li class="history"><label></label> <a href="javascript:void(0)"  onclick="showAll('#model')">历史数据</a></li>
+            <li><label>补充信息：</label> <span><?php echo ($data[0]['supply']); ?></span></li>
+        </ul>
+        <a class="set_sb_btn" href="javascript:void(0)" onclick="showAll('#map_model')"> 设置设备 </a>
+        <a class="set_sb_btn" href="javascript:void(0)" onclick="showAll('#warehouse_model')">添加库区</a>
+        <a class="btn_search" href="javascript:void(0)"> 
+            <span><img src="/Public/admin/img/carry.png"/></span>
+            <span>呼唤</span></a>
+    </div>
+
+</div>
+<!--弹窗-->
+<!-- <div class="alert_out">
+    <div class="alert_in">
+        <div class="alert_top">
+            <span>补充信息</span> 
+            <img src="/Public/admin/img/delete.png" class="alert_del"/>
+        </div>
+        <div class="alert_bottom"><p class="">word，excel，pdf，jpg，txt</p> 
+            <input type="file" name="supply" id="" value=""  class="file"/> 
+            <input type="button" name="" id="" value="上传文件" class="update"/>
+            <input type="button" name="" id="" value="取消选择" class="cancel"/>
+        </div>
+    </div>
+</div>
+<div id="mask" class="mask"></div>  -->
+<div>
+
+    <div id="warehouse_model" class="manage_model"><img src="/Public/admin/img/tc_close.png" alt="" class="tc_close">
+        <form class="form-horizontal" action="<?php echo U('Admin/Warehouse/add');?>" id="add_post_ku" method="post">
+        <h2>添加库区</h2>
+        <ul>
+            <li class="input_dx"><label for="">库区名称:</label> <input type="text"  name="name" id="name" class="required"></li>
+            <li class="input_dx"><label for="">楼层总数:</label> <input type="text"  name="floor" id="floor" class="required"></li>
+        </ul>
+        <div class="manage_sear_cancle">
+            <a href="javascript:void(0)" onclick="checkFormKu()" class="manage_search_butt">确定</a>
+            <a href="javascript:void(0)" class="manage_cancle_butt">取消</a>
+        </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+      <form action="<?php echo U('Admin/Cycle/index');?>" method="POST" id="history_post" >
+    <div id="model" class="model"><img src="/Public/admin/img/tc_close.png" alt="" class="tc_close">
+         <input type="hidden" name="ids" value=" " id="ids">
+        <h2>历史数据</h2>
+        <ul>
+              <li class="input_dx">
+                    <label for="">起止时间：</label>
+                    <b>from</b><span><input type="text" name="starting_point" id="test1"><img src="/Public/admin/img/watch.png"></span>
+                    <b>to</b><span><input type="text" name="end" id="test2"><img src="/Public/admin/img/watch.png"></span>
+                </li>
+                <li class="jg_dx">
+                    <label for="">间隔：</label>
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+                    <input type="text" name="interval">
+                    <b>&nbsp;&nbsp;&nbsp;&nbsp;</b>
+                    <select name="time">
+                        <option value="3">秒</option>
+                        <option value="2">分钟</option>
+                        <option value="1">小时</option>
+                    </select>
+                </li>
+        </ul>
+        <div class="sear_cancle">
+            <a href="javascript:void(0)" class="search_butt">查询</a> <a href="javascript:void(0)" class="cancle_butt">取消</a>
+        </div>
+    </div>
+    </form>
+</div>
+<div>
+    <div id="map_model" class="map_model"><img src="/Public/admin/img/tc_close.png" alt="" class="tc_close">
+        <form action="<?php echo U('Admin/Equipment/update');?>" method="post" id="update_post" enctype="multipart/form-data" >
+            <input type="hidden" name="device_sn" value="" class="device_sn">
+        <ul>
+            <li class="input_dx">
+                <label for="">自定义信息：</label> 
+                <input type="text" placeholder="输入不大于15个字" name="custom">
+            </li>
+            <li class="input_cjzq">
+                <label for="">采集周期设置：</label>
+                <input type="text" name="cycle_time">
+                <select name="stime" id="">
+                    <option value="60">分钟</option>
+                    <option value="1">秒</option>
+                    <option value="3600">时</option>
+                </select>
+            </li>
+            <li class="input_bjfz">
+                <label for="">报警阀值设置上限：</label> <input type="text" name="upper_limit"> <span>℃</span>
+            </li>
+            <li class="input_bjfz">
+                <label for="">报警阀值设置下限：</label> <input type="text" name="buttom_limit"> <span>℃</span>
+            </li>
+            <li class="input_wzaddr"><label for="">位置：库</label> 
+                <select name="warehouse_id" id="warehouse_id">
+                        <option>--请选择--</option>
+                    <?php if(is_array($warehouse)): foreach($warehouse as $key=>$vo): ?><option value="<?php echo ($vo['id']); ?>"><?php echo ($vo['name']); ?></option><?php endforeach; endif; ?>
+                </select> 
+                <select name="floor_id" >
+                    <!-- <option value=""></option> -->
+                    <!-- <?php $__FOR_START_12614__=1;$__FOR_END_12614__=$floor;for($i=$__FOR_START_12614__;$i < $__FOR_END_12614__;$i+=1){ ?><option value="<?php echo ($i); ?>"><?php echo ($i); ?></option><?php } ?> -->
+                </select>层 
+            </li>
+            <!-- <li class="input_lcedit clearfix">
+                <label>楼层编辑：</label> 
+                <i class="clearfix"> 
+                    <span class="down">-</span>
+                        <input class="val" type="text" name="floor_limit" id="floor_limit" value="1"> 
+                    <span class="up">+</span> 
+                </i>
+            </li>
+            <li class="input_kqedit clearfix">
+                <label>库区编辑：</label>
+                <i class="clearfix"> 
+                    <span class="down">-</span>
+                    <input class="val" type="text" name="warehouse_limit" id="warehouse_limit" value="1"> 
+                    <span class="up">+</span> 
+                </i>
+            </li> -->
+            <li class="bc_infor"><label>补充信息：</label>
+               
+                <div>
+                    <div class="same_right"> 
+                        <input type="file" name="supply" id="" value="" placeholder="Arno管理的设备" class="btn">
+                    </div>
+                </div> 
+
+                <!--  <input type="file" name="supply" id="" value=""  class="file"/>  -->
+            </li>
+        </ul>
+        <div class="manage_sear_cancle">
+            <a href="javascript:void(0)" class="map_search_butt">保存</a> 
+            <a href="javascript:void(0)" class="map_cancle_butt">取消</a>
+        </div>
+    </form>
+    </div>
+</div>
+<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=dksQWzUioW2kPi85kazYRSd5EoM0D6GB"></script> -->
+<script type="text/javascript" src="/Public/admin/js/jquery-3.1.0.js"></script>
+<script src="/Public/admin/js/src/laydate.js"></script>
+<script type="text/javascript" src="/Public/admin/js/index.js"></script>
+<script>
+    laydate.render({elem: '#test1', type: 'datetime'});
+    laydate.render({elem: '#test2', type: 'datetime'});
+</script>
+<script type="text/javascript">
+$("#warehouse_id").change(function(){
+    var warehouse_id = $(this).val();
+    var that = $(this);
+    $.ajax({
+        data:{warehouse_id:warehouse_id},
+        type:'get',
+        url:"<?php echo U('Admin/Equipment/getfloor');?>",
+        dataType:'json',
+        success:function(data){
+           var num = JSON.parse(data); //alert(num);
+            var str='';
+               str +='<select name="floor_id" id="">';
+               str+='<option>--请选择--</option>';
+               for(var i=0;i<num;i++){
+                   str +='<option value="'+(i+1)+'">'+(i+1)+'</option>';
+               }
+               str +='</select>';
+               that.nextAll().remove();
+               that.after(str);
+        }
+    })
+})
+
+
+
+
+function  checkFormKu(){
+    $("#add_post_ku").submit();
+ }
+$('.up_date').click(function () {
+    alertClick();
+})
+</script>
+<script type="text/javascript">
+$(".tc_close,.up_date").click(function () {
+    $(".map_model,#mask,.model").hide();
+});
+function showMask() {
+    $("#mask").css("height", $(document).height());
+    $("#mask").css("width", $(document).width());
+    $("#mask").show();
+}
+function letDivCenter(divName) {
+    var top = ($(window).height() - $(divName).height()) / 2;
+    var left = ($(window).width() - $(divName).width()) / 2;
+    var scrollTop = $(document).scrollTop();
+    var scrollLeft = $(document).scrollLeft();
+    $(divName).css({position: 'absolute', 'top': top + scrollTop, left: left + scrollLeft}).show();
+}
+function showAll(divName) {
+    showMask();
+    letDivCenter(divName);
+} 
+$(function(){
+     $('.map_search_butt').click(function(){
+        $("#update_post").submit();
+     })
+
+     var device_sn = $("#device_sn").attr('value');
+      $('#ids').val(device_sn);
+      $('.device_sn').val(device_sn);
+
+    $('.search_butt').click(function(){
+        $('#history_post').submit();
+    })  
+})
+</script>
+<script type="text/javascript">
+
+var lon = $('#lon').val();
+var lat = $("#lat").val();
+var device_sn = $('#device_sn').attr('value'); //alert(device_sn);
+var ext = $('#custom').attr('value');
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("allmap");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(lon,lat);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+  var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+  map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+  var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+  map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+  var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+  map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:device_sn,content:ext,point:''+lon+'|'+lat+'',isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+     ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+      var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+      var iw = createInfoWindow(i);
+      var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+      marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+      
+      (function(){
+        var index = i;
+        var _iw = createInfoWindow(i);
+        var _marker = marker;
+        _marker.addEventListener("click",function(){
+            this.openInfoWindow(_iw);
+          });
+          _iw.addEventListener("open",function(){
+            _marker.getLabel().hide();
+          })
+          _iw.addEventListener("close",function(){
+            _marker.getLabel().show();
+          })
+        label.addEventListener("click",function(){
+            _marker.openInfoWindow(_iw);
+          })
+        if(!!json.isOpen){
+          label.hide();
+          _marker.openInfoWindow(_iw);
+        }
+      })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://api.map.baidu.com/lbsapi/creatmap/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+</body>
+</html>
